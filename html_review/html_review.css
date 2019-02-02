@@ -1,0 +1,64 @@
+/* 
+    CSS for HTML_REVIEW.html
+*/
+
+body {
+    font-family: 'Helvetica';
+}
+
+.navbar {
+    color: white;
+    background: black;
+    
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navbar-item {
+    padding: 8px 16px;
+}
+
+.header-image {
+    width: 100%;
+}
+
+.link-options {
+    list-style: none;
+    font-size: 20px;
+    width: 100%; /* Wouldn't need this b/c it's default */
+    
+    display: flex;
+    flex-direction: row;
+}
+
+.bordered {
+    border: 1px solid black;
+}
+
+.link-options li {
+    width: 33%;
+    margin-right: 24px; 
+    /* vertical horizontal CSS Box model */
+    padding: 8px 8px;
+    
+    display: flex;
+    justify-content: center; 
+}
+
+@media all and (min-width: 0px) and (max-width: 768px) {
+    .navbar-items {
+        display: flex;
+        flex-direction: column;
+        
+        background: white;
+        color: black;
+    }
+}
